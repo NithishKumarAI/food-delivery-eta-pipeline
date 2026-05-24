@@ -128,3 +128,45 @@ Observations:
 - Nonlinear relationships exist in delivery prediction data
 - Tree-based models are better suited for this problem
 - Random Forest currently becomes the best baseline model
+
+---
+
+# Phase 5 - Advanced Model Training
+
+Implemented Models:
+- Random Forest Regressor
+- XGBoost Regressor
+- CatBoost Regressor
+- LightGBM Regressor
+
+Evaluation Summary:
+
+| Model | R² Score |
+|---|---|
+| Linear Regression | 0.60 |
+| Random Forest | 0.82 |
+| XGBoost | 0.82 |
+| LightGBM | 0.83 |
+| CatBoost | 0.84 |
+
+Final Production Model:
+- CatBoost Regressor
+
+Why CatBoost?
+- Best overall performance
+- Better categorical feature handling
+- Smaller deployment size
+- Faster inference
+- More deployment-friendly than Random Forest
+
+---
+
+# Phase 6 - Inference Pipeline Engineering
+
+Created reusable ML backend modules:
+
+```text
+src/
+├── preprocessing.py
+├── predict.py
+└── main.py
