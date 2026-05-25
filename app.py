@@ -10,7 +10,10 @@ st.set_page_config(
 )
 
 st.title("🚚 Food Delivery ETA Predictor")
-
+st.info(
+    "This is a demo Machine Learning project created for portfolio and educational purposes. "
+    "Predictions are generated using a trained ML model and may not reflect real-world delivery systems."
+)
 st.markdown(
     "Predict food delivery time using a Machine Learning model"
 )
