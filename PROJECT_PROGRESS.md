@@ -170,3 +170,143 @@ src/
 ├── preprocessing.py
 ├── predict.py
 └── main.py
+
+---
+
+# Phase 7 - Streamlit Frontend Development
+
+Built an interactive frontend using Streamlit.
+
+Features:
+- User-friendly form inputs
+- Real-time ETA prediction
+- Integrated preprocessing + model inference
+- Error handling for invalid inputs
+- Lightweight UI for deployment demos
+
+Frontend Flow:
+
+```text
+User Input → Streamlit Form → Preprocessing → CatBoost Prediction → ETA Output
+```
+
+---
+
+# Phase 8 - Docker Containerization
+
+Containerized the entire application using Docker.
+
+Implemented:
+- Python 3.11 slim image
+- requirements.txt dependency management
+- Streamlit container startup configuration
+- Port exposure for Cloud Run compatibility
+
+Key Learnings:
+- Docker image optimization
+- Dependency management inside containers
+- Linux package compatibility issues
+- Importance of reproducible environments
+
+---
+
+# Phase 9 - Google Cloud Deployment
+
+Deployed the application to Google Cloud Run.
+
+Deployment Workflow:
+
+```text
+Local Development
+    ↓
+Docker Build
+    ↓
+Artifact Registry Push
+    ↓
+Google Cloud Run Deployment
+```
+
+Completed:
+- Google Artifact Registry setup
+- Docker image push
+- Cloud Run deployment
+- HTTPS public endpoint configuration
+- Debugged deployment/runtime issues
+
+Challenges Faced:
+- PortAudio dependency issues
+- Container startup failures
+- Streamlit port binding configuration
+- Environment-specific dependency problems
+
+Key Learnings:
+- Cloud deployment differs significantly from local execution
+- Production debugging requires infrastructure understanding
+- Container logs are critical for troubleshooting
+- Deployment engineering is a major part of ML systems
+
+---
+
+# Final Production Architecture
+
+```text
+User
+  ↓
+Streamlit Frontend
+  ↓
+Preprocessing Pipeline
+  ↓
+CatBoost Model
+  ↓
+ETA Prediction Output
+```
+
+---
+
+# Final Outcomes
+
+Successfully built:
+- End-to-end ML pipeline
+- Production-ready inference workflow
+- Cloud-deployed ML application
+- Containerized deployment architecture
+
+Technologies Used:
+- Python
+- Pandas
+- Scikit-learn
+- CatBoost
+- Streamlit
+- Docker
+- Google Cloud Run
+
+---
+
+# Future Improvements
+
+Potential Enhancements:
+- MLflow experiment tracking
+- CI/CD pipeline
+- Kubernetes deployment
+- Real-time monitoring
+- Automated retraining pipeline
+- Feature store integration
+- API authentication
+- Database integration
+
+---
+
+# Overall Learning Summary
+
+This project helped develop practical understanding of:
+- Data preprocessing
+- Feature engineering
+- Model evaluation
+- Production inference pipelines
+- Containerization
+- Cloud deployment
+- Debugging production systems
+- End-to-end ML engineering workflows
+
+Most important realization:
+Building a model is only one part of production ML systems. Deployment, infrastructure, debugging, and reproducibility are equally important.
