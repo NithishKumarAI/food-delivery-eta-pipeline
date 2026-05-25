@@ -2,7 +2,7 @@
 
 End-to-end ML app that predicts delivery time (minutes) from order metadata, weather, traffic, courier info, and coordinates. Trained several regressors, shipped **CatBoost** to production, and deployed a **Streamlit** UI on **Google Cloud Run** via **Docker**.
 
-**Live demo:** https://food-delivery-api-814424211655.asia-south1.run.app(https://your-cloud-run-url.run.app)
+**Live demo:** [Link to the demo app](https://food-delivery-api-814424211655.asia-south1.run.app)
 
 ---
 
